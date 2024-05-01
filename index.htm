@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .navbar {
+        line-height: 44px;
+        width: 100%;
+        background-color: #F2F2F2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .navcontainer {
+        height: 44px;
+        width: 996px;
+        max-width: 1024px;
+        /* background: whitesmoke; */
+        letter-spacing: -0.12px;
+    }
+
+    .navcontainer ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        list-style: none;
+        /* background: whitesmoke; */
+        padding: 0 8px 0 8px;
+        /* height: 40px;
+        width: 30px; */
+
+    }
+
+    .fa-brands {
+        font-size: 17px;
+    }
+
+    .navcontainer li a {
+        color: #303030;
+        text-decoration: none;
+
+
+    }
+
+    /* Navbar container 1 ends */
+
+    /* Navbar container 2 start */
+
+    .navbar2 {
+        height: 100px;
+        width: 100%;
+        padding: 8px 0 8px 0;
+        position: relative;
+        /* overflow: hidden; */
+        background-color: #FFFFFF;
+        font-family: Arial, Helvetica, sans-serif;
+        ;
+
+    }
+
+    .navcontainer2 {
+        height: 92px;
+        margin: 0 34px 0 34px;
+        padding: 0 0 49px 0;
+    }
+
+    .navcontainer2 ul {
+        /* overflow: auto hidden; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        vertical-align: top;
+        font-size: 12px;
+        line-height: 25px;
+        letter-spacing: -0.12;
+
+
+    }
+
+    .navcontainer2 li {
+        /* line-height: 25px; */
+        margin: 0 -2px 0 0;
+        padding: 0 20px 0 4px;
+        display: inline-block;
+        list-style: none;
+        /* width: 75px; */
+
+    }
+
+    .navcontainer2 figure {
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        height: 54px;
+        width: 38px;
+        margin: 0 19px 7px 19px;
+
+
+    }
+
+    .navcontainer2 ul li a {
+        letter-spacing: -0.12px;
+        /* font-size: 12px; */
+
+        text-align: center;
+        margin: 3px 0 0 0;
+        text-decoration: none;
+        color: #1D1D1F;
+    }
+
+    .navcontainer2 img {
+        height: 54px;
+        width: 75.8875px;
+    }
+
+    .navcontainer2 ul li a p {
+        line-height: 16.005px;
+        width: 75.8875px;
+    }
+
+    /* navbarcontainer2 ends */
+
+    /* navbarcontainer 3 starts */
+
+    .navbar3 {
+        line-height: 16.6667px;
+        width: 100%;
+        padding: 14px 0 14px 0;
+        background-color: #F5F5F7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar3 p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: lighter;
+        width: 980px;
+        text-align: center;
+        letter-spacing: 0.154px;
+    }
+
+
+    /* navbarcontainer 3 ends */
+
+    /* adscontainer1 starts */
+
+    .adscontainer1 {
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+        /* max-width: 100%; */
+        padding: 140px 0 95px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .cont1box {
+        /* height: 617.6px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .cont1textbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 582px 69px 582px;
+        text-align: center;
+
+    }
+
+    #p1 {
+        line-height: 16.0005px;
+        height: 22px;
+        width: 144.7px;
+        padding: 3px 11px 3px 11px;
+        border-radius: 12px;
+        font-size: 12px;
+        text-align: center;
+        letter-spacing: -0.12px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #F56300;
+    }
+
+    .fig1 {
+        height: 20px;
+        width: 140px;
+        /* margin: 0 0 0 -70px; */
+        margin: 8px 0 0 0;
+
+
+    }
+
+    .fig2 {
+        height: 53px;
+        margin: 25px;
+        /* line-height: 52px; */
+
+    }
+
+    #p2 {
+        display: inline;
+        color: white;
+        text-align: center;
+        font-size: 21px;
+        letter-spacing: 0.231px;
+        line-height: 29.001px;
+        margin: -3px 0 0 0;
+
+    }
+
+    .btn1 {
+        /* border: 1px solid #FFFFFF; */
+        padding: 7px 15px 7px 15px;
+        min-width: 30px;
+        background-color: #0077ED;
+        border-radius: 980px;
+        font-size: 17px;
+        display: inline-block;
+        margin-top: 16px;
+        color: white;
+
+    }
+
+    .cont1textbox a {
+        font-size: 21px;
+        margin: 16px 14px 0 14px;
+        color: #2997FF;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .cont1iphone {
+        width: 100%;
+    }
+
+    .fig3 {
+        margin: 0 0 0 -350px;
+        position: relative;
+        left: 759px;
+        display: inline;
+    }
+
+    /* adscontainer1 ends */
+
+    /* ads container 2 starts */
+
+    .adscontainer2 {
+        height: 100%;
+        width: 100%;
+        /* max-width: 100%; */
+        padding: 77px 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .cont2box {
+        /* height: 617.6px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .cont2textbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 588px 34px 588px;
+        text-align: center;
+
+    }
+
+    #p1 {
+        line-height: 16.0005px;
+        height: 22px;
+        width: 144.7px;
+        padding: 3px 11px 3px 11px;
+        border-radius: 12px;
+        font-size: 12px;
+        text-align: center;
+        letter-spacing: -0.12px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #F56300;
+    }
+
+    .fig4 {
+        line-height: 21px;
+        width: 100px;
+        /* margin: 0 0 0 -70px; */
+        margin-top: 7px;
+        color: #1D1D1F;
+
+
+    }
+
+    #cont2_title {
+        color: #1D1D1F;
+        margin-top: 16px;
+        font-size: 48px;
+        font-weight: 600;
+        letter-spacing: -0.144px;
+        text-align: center;
+        line-height: 52.0077px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    #cont2_p2 {
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline;
+        color: black;
+        text-align: center;
+        font-size: 21px;
+        letter-spacing: 0.231px;
+        line-height: 29.001px;
+        margin-top: 18px;
+        width: 360px;
+    }
+
+    .btn1 {
+        border: 1px solid #FFFFFF;
+        padding: 7px 15px 7px 15px;
+        min-width: 30px;
+        background-color: #0077ED;
+        border-radius: 980px;
+        font-size: 17px;
+        display: inline-block;
+        margin-top: 16px;
+        color: white;
+
+    }
+
+    .cont2textbox a {
+        font-size: 21px;
+        margin: 16px 14px 0 14px;
+        color: #2997FF;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .cont2iphone {
+        width: 100%;
+    }
+
+    .fig6 {
+        margin: 0 0 0 -937px;
+        position: relative;
+        left: 759px;
+        display: inline;
+    }
+
+    /* ads container 2 ends */
+
+    /* Compare container starts */
+
+    .container4{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container4 .title {
+        font-size: 48px;
+        color: black;
+        font-weight: 600;
+        height: auto;
+        padding-top: 30px;
+       
+    }
+
+    .title p{
+        text-align: center;
+    }
+
+    .container4 .mob_list {
+        display: flex;
+        width: 70%;
+        margin-top: 6%;
+        height: auto;
+
+    }
+
+    .mob1 {
+        width: 24%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        /* font-weight: 100; */
+    }
+
+
+
+    .mob1 .mob_up {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.514);
+        height: 555px;
+        margin-bottom: 20%;
+    }
+
+    .mob1 .mob_up img {
+        width: 200px;
+        height: 300px;
+        padding: 10% 0%;
+
+    }
+
+    .mob1 .mob_up .colors1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+
+    }
+
+    .mob1 .mob_up .colors1 .clr:nth-child(1) {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        background-color: #BAB4A9;
+        box-shadow: 1px 1px 1px black;
+    }
+
+    .mob1 .mob_up .colors1 .clr:nth-child(2) {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        background-color: #3D4555;
+        box-shadow: 1px 1px 1px black;
+    }
+
+    .mob1 .mob_up .colors1 .clr:nth-child(3) {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        background-color: #F2F1EB;
+        box-shadow: 1px 1px 1px black;
+    }
+
+    .mob1 .mob_up .colors1 .clr:nth-child(4) {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        background-color: #3F4042;
+        box-shadow: 1px 1px 1px black;
+    }
+
+    .mob1 .mob_up .colors2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+
+    }
+
+    .mob1 .mob_up .colors2 .clr:nth-child(1) {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        background-color: #EBD0D2;
+        box-shadow: 1px 1px 1px black;
+    }
+
+    .mob1 .mob_up .colors2 .clr:nth-child(2) {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        background-color: #ECE6C6;
+        box-shadow: 1px 1px 1px black;
+    }
+
+    .mob1 .mob_up .colors2 .clr:nth-child(3) {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        background-color: #CFD9C9;
+        box-shadow: 1px 1px 1px black;
+    }
+
+    .mob1 .mob_up .colors2 .clr:nth-child(4) {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        background-color: #D5DDE0;
+        box-shadow: 1px 1px 1px black;
+    }
+
+    .mob1 .mob_up .colors2 .clr:nth-child(5) {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        background-color: #3C4042;
+        box-shadow: 1px 1px 1px black;
+    }
+
+    .mob1 .mob_up .colors3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+
+    }
+
+    .mob1 .mob_up .colors3 .clr:nth-child(1) {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        background-color: #9FB5C8;
+        box-shadow: 1px 1px 1px black;
+    }
+
+    .mob1 .mob_up .colors3 .clr:nth-child(2) {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        background-color: #E6DCEB;
+        box-shadow: 1px 1px 1px black;
+    }
+
+    .mob1 .mob_up .colors3 .clr:nth-child(3) {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        background-color: #F9E479;
+        box-shadow: 1px 1px 1px black;
+    }
+
+    .mob1 .mob_up .colors3 .clr:nth-child(4) {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        background-color: #232931;
+        box-shadow: 1px 1px 1px black;
+    }
+
+    .mob1 .mob_up .colors3 .clr:nth-child(5) {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        background-color: #FAF6F2;
+        box-shadow: 1px 1px 1px black;
+    }
+
+    .mob1 .mob_up .colors3 .clr:nth-child(6) {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        background-color: #FC0323;
+        box-shadow: 1px 1px 1px black;
+    }
+
+    .mob1 .mob_up .colors4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+
+    }
+
+    .mob1 .mob_up .colors4 .clr:nth-child(1) {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        background-color: #232A31;
+        box-shadow: 1px 1px 1px black;
+    }
+
+    .mob1 .mob_up .colors4 .clr:nth-child(2) {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        background-color: #FAF6F2;
+        box-shadow: 1px 1px 1px black;
+    }
+
+    .mob1 .mob_up .colors4 .clr:nth-child(3) {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        background-color: #BF0013;
+        box-shadow: 1px 1px 1px black;
+    }
+
+    .mob1 .mob_up h6 {
+        color: rgb(224, 95, 2);
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+
+    .mob1 .mob_up h4 {
+        font-size: 23px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .mob1 .mob_up .se_adjust {
+        margin-top: 32px;
+    }
+
+    .mob1 .mob_up .adjust_margin {
+        margin-top: 28px;
+    }
+
+    .mob1 .mob_up p {
+        font-size: 17px;
+        font-weight: 400;
+
+    }
+
+
+    .mob1 .mob_up h5 {
+        margin-top: 50px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .mob1 .mob_up .se_adjust_h5 {
+        margin-top: 20px;
+    }
+
+    .mob1 .mob_up button {
+        border-radius: 20px;
+        padding: 5px 16px;
+        background: rgb(1, 108, 207);
+        color: white;
+        font-size: 12px;
+        margin-top: 15px;
+        border: transparent;
+    }
+
+    .mob1 .mob_up button:hover {
+
+        cursor: pointer;
+    }
+
+    .mob1 .mob_up h3 {
+        font-size: 14px;
+        color: rgb(1, 108, 207);
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 35px;
+
+    }
+
+    .mob1 .mob_up h3:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: rgb(1, 108, 207);
+    }
+
+    .mob_down {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.514);
+        height: 49%;
+        margin: 20px 20px;
+    }
+
+    .mob_down h3 {
+        text-align: center;
+        font-weight: 600;
+        padding-bottom: 6%;
+    }
+
+    .mob_down h5 {
+        text-align: center;
+        font-weight: 100;
+        font-size: 14px;
+    }
+
+    .mob_down .div2 {
+        margin: 15px 0px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .div2 img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .mob_down .div2 h5 {
+        font-size: 14px;
+        font-weight: 100;
+
+    }
+
+    .mob_down .div2 h6 {
+        font-weight: 100;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mob_down .div2 h6 sup {
+        font-size: 9px;
+    }
+
+    /* Compare container ends */
+
+
+    /* Footer starts */
+
+    .mainfooter {
+        background-color: #F5F5F7;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footernav {
+        padding: 17px 22px 17px 0px;
+        display: flex;
+        align-items: center;
+        color: #444445;
+    }
+
+    .p1 {
+        color: #828283;
+        margin: 0 7px 0 7px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .p2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+
+    .footerlist {
+        color: #444445;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerlist ul {
+        width: 196px;
+
+    }
+
+    .footerlist li {
+        list-style: none;
+        color: #444445;
+        margin-bottom: 10px;
+    }
+
+    .footerlist a {
+        text-decoration: none solid rgba(0, 0, 0, 0.56);
+        color: black;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: -0.12px;
+    }
+
+    .footerlist h3 {
+        font-size: 12px;
+        letter-spacing: -0.12px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+    }
+
+    /* Footer ends */
+</style>
+
+<body>
+    <!-- navbar1 starts -->
+    <nav class="navbar">
+        <div class="navcontainer">
+            <ul>
+                <li><a href=""><i class="fa-brands fa-apple"></i></a></li>
+                <li><a href="">Store</a></li>
+                <li><a href="">Mac</a></li>
+                <li><a href="">iPad</a></li>
+                <li><a href="">iPhone</a></li>
+                <li><a href="">Watch</a></li>
+                <li><a href="">AirPods</a></li>
+                <li><a href="">TV & Home</a></li>
+                <li><a href="">Entertainment</a></li>
+                <li><a href="">Accessories</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- navbar ends -->
+
+
+    <!-- navbar2 starts -->
+    <nav class="navbar2">
+        <div class="navcontainer2">
+            <ul>
+                <li>
+                    <a href="">
+                        <figure><img
+                                src="https://www.apple.com/v/iphone/home/br/images/chapternav/iphone_15_pro_light__diyvo6c7yu82_large.svg"
+                                alt="">
+                            <p>iPhone 15 Pro</p>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img
+                                src="https://www.apple.com/v/iphone/home/br/images/chapternav/iphone_15_light__euftnkhrzdea_large.svg"
+                                alt="">
+                            <p>iPhone 15</p>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img
+                                src="https://www.apple.com/v/iphone/home/br/images/chapternav/iphone_14_light__fwknsxkf80uq_large.svg"
+                                alt="">
+                            <p>iPhone 14</p>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img
+                                src="https://www.apple.com/v/iphone/home/br/images/chapternav/iphone_13_light__ewo3e0sf67o2_large.svg"
+                                alt="">
+                            <p>iPhone 13</p>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img
+                                src="https://www.apple.com/v/iphone/home/br/images/chapternav/iphone_se_light__fhg8duy6ffau_large.svg"
+                                alt="">
+                            <p>iPhone SE</p>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img
+                                src="https://www.apple.com/v/iphone/home/br/images/chapternav/iphone_compare_light__f4jj7brpbvm2_large.svg"
+                                alt="">
+                            <p>Compare</p>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img
+                                src="https://www.apple.com/v/iphone/home/br/images/chapternav/airpods_light__8oj157p2476a_large.svg"
+                                alt="">
+                            <p>Airpods</p>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img
+                                src="https://www.apple.com/v/iphone/home/br/images/chapternav/airtag_light__cb2bmnv6aoeu_large.svg"
+                                alt="">
+                            <p>AirTag</p>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img
+                                src="https://www.apple.com/v/iphone/home/br/images/chapternav/accessories_light__ed5l6ipsevqu_large.svg"
+                                alt="">
+                            <p>Accessories</p>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img
+                                src="https://www.apple.com/v/iphone/home/br/images/chapternav/iphone_ios_light__b8s4ws8o77iq_large.svg"
+                                alt="">
+                            <p>iOS 17</p>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img
+                                src="https://www.apple.com/v/iphone/home/br/images/chapternav/shop_iphone_light__b2toggskllle_large.svg"
+                                alt="">
+                            <p>Shop iPhone</p>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- navbar2 ends -->
+
+
+
+    <!-- navbar 3 starts -->
+
+    <nav class="navbar3">
+        <p>Save up to ₹6000.00 instantly on selected iPhone models with HDFC Bank Credit Cards.+ Plus No Cost EMI from
+            most leading banks.</p>
+    </nav>
+
+    <!-- navbar3 ends -->
+
+    <!-- Advertise container1 starts -->
+
+    <div class="adscontainer1">
+        <div class="cont1box">
+            <div class="cont1textbox">
+                <p id="p1">New</p>
+                <img class="fig1"
+                    src="https://www.apple.com/v/iphone/home/br/images/overview/hero/iphone_15_pro_logo__xsnr3zpj28yu_large.jpg"
+                    alt="">
+                <img class="fig2"
+                    src="https://www.apple.com/v/iphone/home/br/images/overview/hero/headline_titanium__cj5ay941qj6u_large.jpg"
+                    alt="">
+
+                <p id="p2">From ₹21483.00/mo.‡ or ₹134900.00*</p>
+
+                <button class="btn1">Buy</button>
+
+                <a href="https://www.apple.com/in/iphone-15-pro/">Learn more ></a>
+
+            </div>
+
+            <div class="cont1iphone">
+                <img class="fig3"
+                    src="https://www.apple.com/v/iphone/home/br/images/overview/hero/hero_iphone_15_pro__eqwrvy72748y_large.jpg"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Advertise container1 ends -->
+
+    <!-- Advertise container2 starts -->
+
+    <div class="adscontainer2">
+        <div class="cont2box">
+            <div class="cont2textbox">
+                <p id="p1">New</p>
+                <img class="fig4"
+                    src="https://www.apple.com/v/iphone/home/br/images/overview/hero/iphone_15_logo__bva4cdj5koty_large.jpg"
+                    alt="">
+
+                <p id="cont2_title">Newphoria</p>
+
+                <p id="cont2_p2">From ₹12483.00/mo.‡ or ₹79900.00*</p>
+
+                <button class="btn1">Buy</button>
+
+                <a href="https://www.apple.com/in/iphone-15-pro/">Learn more ></a>
+
+            </div>
+
+            <div class="cont2iphone">
+                <img class="fig6"
+                    src="https://www.apple.com/v/iphone/home/br/images/overview/hero/hero_iphone_15__fano21ho6fqu_large.jpg"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Advertise container2 ends -->
+
+    <!-- Compare container 3 starts -->
+
+    <div class="container4">
+        <div class="title">
+            <p>Which iPhone is right for you?</p>
+        </div>
+        <div class="mob_list">
+            <div class="mob1">
+                <div class="mob_up">
+                    <img src="../Project1(apple)/img/iPhone_15_Pro_White.jpg" alt="">
+                    <div class="colors1">
+                        <div class="clr"></div>
+                        <div class="clr"></div>
+                        <div class="clr"></div>
+                        <div class="clr"></div>
+                    </div>
+                    <h6>New</h6>
+                    <h4>iPhone 15 Pro</h4>
+                    <p>The ultimate iPhone.</p>
+                    <h5>From ₹134900.00*</h5>
+                    <button>Buy</button>
+                    <h3>Learn more></h3>
+                </div>
+                <div class="mob_down">
+                    <h3>17.00 cm (6.7″) or</h3>
+                    <h3>15.54 cm (6.1″)</h3>
+                    <h5>Super Retina XDR display <sup>1</sup> <br>
+
+                        ProMotion technology <br>
+
+
+                        Always-On display</h5>
+
+
+                    <div class="div2">
+                        <img src="../Project1(apple)/img/iphone_glass.PNG" alt="">
+                        <h5>Titanium with textured <br>
+                            matte glass back</h5>
+                        <h6>Action button</h6>
+                    </div>
+                    <div class="div2">
+                        <img src="../Project1(apple)/img/dyanamic_island.PNG" alt="">
+                        <h5>Dynamic Island</h5>
+                        <h6>A magical way to interact <br>with iPhone</h6>
+                    </div>
+                    <div class="div2">
+                        <img src="../Project1(apple)/img/a17.PNG" alt="">
+                        <h5>A17 Pro chip</h5>
+                        <h6>with 6-core GPU</h6>
+                    </div>
+                    <div class="div2"><img src="../Project1(apple)/img/3cam.PNG" alt="">
+
+                        <h5>Pro camera system
+                        </h5>
+                        <h6>48MP Main Ultra Wide
+                            Telephoto <br>
+
+                            Super-high-resolution photos <br> (24MP and 48MP) <br>
+
+                            Next-generation portraits with Focus and Depth Control</h6><br>
+                    </div>
+                    <div class="div2">
+                        <img src="../Project1(apple)/img/sos.PNG" alt="">
+                        <h5>Emergency SOS</h5>
+                        <h6>Crash Detection<sup>2</sup></h6>
+
+
+                    </div>
+                    <div class="div2"><img src="../Project1(apple)/img/battery.PNG" alt="">
+                        <h5>Up to 29 hours</h5>
+                        <h6>video playback<sup>3</sup>
+                    </div>
+                    <div class="div2"><img src="../Project1(apple)/img/usb_c.PNG" alt="">
+                        <h5>USB-C <br>
+
+                            Supports USB 3 for <br>up to 20x faster transfers <sup>5</sup></h5>
+                    </div>
+                    <div class="div2"><img src="../Project1(apple)/img/faceid.PNG" alt="">
+                        <h5>Face ID</h5>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="mob1">
+                <div class="mob_up">
+                    <img src="../Project1(apple)/img/iPhone_15_Pink.jpg" alt="">
+                    <div class="colors2">
+                        <div class="clr"></div>
+                        <div class="clr"></div>
+                        <div class="clr"></div>
+                        <div class="clr"></div>
+                        <div class="clr"></div>
+                    </div>
+                    <h6>New</h6>
+                    <h4>iPhone 15</h4>
+                    <p>A total powerhouse.</p>
+                    <h5>From ₹79900.00*</h5>
+                    <button>Buy</button>
+                    <h3>Learn more></h3>
+                </div>
+                <div class="mob_down">
+                    <h3>17.00 cm (6.7″) or</h3>
+                    <h3>15.54 cm (6.1″)</h3>
+                    <h5>Super Retina XDR display <sup>1</sup> <br>
+
+                        - <br>
+
+                        -</h5>
+
+
+                    <div class="div2">
+                        <img src="../Project1(apple)/img/iphone_glass.PNG" alt="">
+                        <h5>Aluminium with colour‑infused <br> glass back</h5>
+                        <h6>Ring/Silent switch</h6>
+                    </div>
+                    <div class="div2">
+                        <img src="../Project1(apple)/img/dyanamic_island.PNG" alt="">
+                        <h5>Dynamic Island</h5>
+                        <h6>A magical way to interact <br>with iPhone</h6>
+                    </div>
+                    <div class="div2">
+
+                        <img src="../Project1(apple)/img/a16.PNG" alt="">
+                        <h5>A16 Bionic chip</h5>
+                        <h6>with 5-core GPU</h6>
+                    </div>
+                    <div class="div2"><img src="../Project1(apple)/img/3cam.PNG" alt="">
+
+                        <h5>Advanced dual-camera</h5>
+                        <h6>48MP Main Ultra Wide
+                            <br>
+                            <br>
+                            Super-high-resolution photos <br> (24MP and 48MP)
+
+                            Next-generation portraits with <br>
+                            Focus and Depth Control
+                        </h6><br>
+                    </div>
+                    <div class="div2">
+                        <img src="../Project1(apple)/img/sos.PNG" alt="">
+                        <h5>Emergency SOS</h5>
+                        <h6>Crash Detection<sup>2</sup></h6>
+
+
+                    </div>
+                    <div class="div2"><img src="../Project1(apple)/img/battery.PNG" alt="">
+                        <h5>Up to 29 hours</h5>
+                        <h6>video playback<sup>3</sup>
+                    </div>
+                    <div class="div2"><img src="../Project1(apple)/img/usb_c.PNG" alt="">
+                        <h5>USB-C <br>
+
+                            Supports USB 2</h5>
+                        <br>
+                    </div>
+                    <div class="div2"><img src="../Project1(apple)/img/faceid.PNG" alt="">
+                        <h5>Face ID</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="mob1">
+                <div class="mob_up">
+                    <img src="../Project1(apple)/img/iPhone_14_Blue.jpg" alt="">
+                    <div class="colors3">
+                        <div class="clr"></div>
+                        <div class="clr"></div>
+                        <div class="clr"></div>
+                        <div class="clr"></div>
+                        <div class="clr"></div>
+                        <div class="clr"></div>
+                    </div>
+
+                    <h4 class="adjust_margin">iPhone 14</h4>
+                    <p>As amazing as ever.</p>
+                    <h5>From ₹69900.00*</h5>
+                    <button>Buy</button>
+                    <h3>Learn more></h3>
+                </div>
+                <div class="mob_down">
+                    <h3>16.95 cm (6.7″) or or</h3>
+                    <h3>15.40 cm (6.1″)</h3>
+                    <h5>Super Retina XDR display <sup>1</sup> <br>
+
+                        - <br>
+
+                        -</h5>
+
+
+                    <div class="div2">
+                        <img src="../Project1(apple)/img/iphone_glass.PNG" alt="">
+                        <h5>Aluminium with <br>
+                            glass back</h5>
+                        <h6>Ring/Silent switch</h6>
+                    </div>
+                    <div class="div2">
+                        <br>
+                        <br>-
+                        <br>
+                        <br>
+                    </div>
+                    <div class="div2">
+                        <img src="../Project1(apple)/img/a15.PNG" alt="">
+                        <h5>A15 Bionic chip</h5>
+                        <h6>with 5-core GPU</h6>
+                    </div>
+                    <div class="div2"><img src="../Project1(apple)/img/3cam.PNG" alt="">
+
+                        <h5>Dual-camera system
+                        </h5>
+                        <h6>12MP Main Ultra Wide <br>
+
+                            <br><br>-
+
+                            <br>Portrait mode with Focus and <br> Depth Control
+                        </h6><br>
+                    </div>
+                    <div class="div2">
+                        <img src="../Project1(apple)/img/sos.PNG" alt="">
+                        <h5>Emergency SOS</h5>
+                        <h6>Crash Detection<sup>2</sup></h6>
+
+
+                    </div>
+                    <div class="div2"><img src="../Project1(apple)/img/battery.PNG" alt="">
+                        <h5>Up to 29 hours</h5>
+                        <h6>video playback<sup>3</sup>
+                    </div>
+                    <div class="div2"><img src="../Project1(apple)/img/usb_light.PNG" alt="">
+                        <h5>Lightning <br>
+
+                            Supports USB 2</h5>
+                        <br>
+                    </div>
+                    <div class="div2"><img src="../Project1(apple)/img/faceid.PNG" alt="">
+                        <h5>Face ID</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="mob1">
+                <div class="mob_up">
+                    <img src="../Project1(apple)/img/iPhone_SE.jpg" alt="">
+                    <div class="colors4">
+                        <div class="clr"></div>
+                        <div class="clr"></div>
+                        <div class="clr"></div>
+                        <div class="clr"></div>
+                    </div>
+
+                    <h4 class="se_adjust">iPhone SE</h4>
+                    <p>Serious power. </p>
+                    <p>Serious value.</p>
+                    <h5 class="se_adjust_h5">From ₹49900.00*</h5>
+                    <button>Buy</button>
+                    <h3>Learn more></h3>
+                </div>
+                <div class="mob_down">
+                    <h3>11.94 cm (4.7″)</h3>
+                    <br>
+                    <br>
+
+                    <h5>Retina HD display <sup>1</sup>
+
+                        <br>
+
+                        - <br>
+                        -
+                    </h5>
+
+
+                    <div class="div2">
+                        <img src="../Project1(apple)/img/iphone_glass.PNG" alt="">
+                        <h5>Aluminium and <br>
+                            glass </h5>
+                        <h6>Ring/Silent switch</h6>
+                    </div>
+                    <div class="div2">
+                        <br>
+                        <br>-
+                        <br>
+                        <br>
+                    </div>
+                    <div class="div2">
+                        <img src="../Project1(apple)/img/a15.PNG" alt="">
+                        <h5>A15 Bionic chip</h5>
+                        <h6>with 4-core GPU</h6>
+                    </div>
+                    <div class="div2"><img src="../Project1(apple)/img/3cam.PNG" alt="">
+
+                        <h5>Pro camera system
+                        </h5>
+                        <h6>48MP Main Ultra Wide
+                            Telephoto <br>
+
+                            Super-high-resolution photos <br> (24MP and 48MP) <br>
+
+                            Next-generation portraits with Focus and Depth Control</h6><br>
+                    </div>
+                    <div class="div2">
+                        <img src="../Project1(apple)/img/sos.PNG" alt="">
+                        <h5>Emergency SOS</h5>
+                        <h6>Crash Detection<sup>2</sup></h6>
+
+
+                    </div>
+                    <div class="div2"><img src="../Project1(apple)/img/battery.PNG" alt="">
+                        <h5>Up to 29 hours</h5>
+                        <h6>video playback<sup>3</sup>
+                    </div>
+                    <div class="div2"><img src="../Project1(apple)/img/usb_light.PNG" alt="">
+                        <h5>Lightning <br>
+
+                            Supports USB 2</h5>
+                        <br>
+                    </div>
+
+                    <div class="div2"><img src="../Project1(apple)/img/touchid.PNG" alt="">
+                        <h5>Touch ID</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compare container 3 ends -->
+
+
+    <!-- Footer Starts -->
+
+    <div class="mainfooter">
+        <div class="globalfooternav">
+            <div class="footernav">
+                <i class="fa-brands fa-apple"></i>
+                <p class="p1">></p>
+                <p class="p2">iPhone</p>
+            </div>
+            <div class="footerlist">
+                <div class="list1">
+                    <ul>
+                        <li>
+                            <h3>Shop and Learn</h3>
+                        </li>
+                        <li><a href="">Store</a></li>
+                        <li><a href="">Mac</a></li>
+                        <li><a href="">iPad</a></li>
+                        <li><a href="">iPhone</a></li>
+                        <li><a href="">Watch</a></li>
+                        <li><a href="">AirPods</a></li>
+                        <li><a href="">TV and Home</a></li>
+                        <li><a href="">AirTag</a></li>
+                        <li><a href="">Accessories</a></li>
+                        <li><a href="">Gift Cards</a></li>
+                        <br>
+                        <li>
+                            <h3>Apple Wallet</h3>
+                        </li>
+                        <li><a href="">Wallet</a></li>
+                    </ul>
+                </div>
+                <div class="list2">
+                    <ul>
+                        <li>
+                            <h3>Account</h3>
+                        </li>
+                        <li><a href="">Manage Your Apple ID</a></li>
+                        <li><a href="">Apple Store Account</a></li>
+                        <li><a href="">iCloud.com</a></li>
+                        <br>
+                        <li>
+                            <h3>Entertainment</h3>
+                        </li>
+                        <li><a href="">Apple One</a></li>
+                        <li><a href="">Apple TV+</a></li>
+                        <li><a href="">Apple Music</a></li>
+                        <li><a href="">Apple Arcade</a></li>
+                        <li><a href="">Apple Podcasts</a></li>
+                        <li><a href="">Apple Books</a></li>
+                        <li><a href="">App Store</a></li>
+                    </ul>
+                </div>
+                <div class="list3">
+                    <ul>
+                        <li>
+                            <h3>Apple Store</h3>
+                        </li>
+                        <li><a href="">Find a Store</a></li>
+                        <li><a href="">Genius Bar</a></li>
+                        <li><a href="">Today at Apple</a></li>
+                        <li><a href="">Apple Camp</a></li>
+                        <li><a href="">Apple Trade in</a></li>
+                        <li><a href="">Ways to Buy</a></li>
+                        <li><a href="">Recycling Programme</a></li>
+                        <li><a href="">Order Status</a></li>
+                        <li><a href="">Shopping Help</a></li>
+                    </ul>
+                </div>
+                <div class="list4">
+                    <ul>
+                        <li>
+                            <h3>For Business</h3>
+                        </li>
+                        <li><a href="">Apple and Business</a></li>
+                        <li><a href="">Shop for Business</a></li>
+                        <br>
+                        <li>
+                            <h3>For Education</h3>
+                        </li>
+                        <li><a href="">Apple and Education</a></li>
+                        <li><a href="">Shop for Education</a></li>
+                        <li><a href="">Shop for University</a></li>
+                        <br>
+                        <li>
+                            <h3>For Healthcare</h3>
+                        </li>
+                        <li><a href="">Apple in Healthcare</a></li>
+                        <li><a href="">Health on Apple Watch</a></li>
+                    </ul>
+                </div>
+                <div class="list5">
+                    <ul>
+                        <li>
+                            <h3>Apple Values</h3>
+                        </li>
+                        <li><a href="">Accessibility</a></li>
+                        <li><a href="">Education</a></li>
+                        <li><a href="">Environment</a></li>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Supplier Responsibility</a></li>
+                        <br>
+                        <li>
+                            <h3>About Apple</h3>
+                        </li>
+                        <li><a href="">Newsroom</a></li>
+                        <li><a href="">Apple Leadership</a></li>
+                        <li><a href="">Career Opportunities</a></li>
+                        <li><a href="">Investors</a></li>
+                        <li><a href="">Ethics & Compliance</a></li>
+                        <li><a href="">Events</a></li>
+                        <li><a href="">Contact Apple</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer Ends -->
+
+
+</body>
+
+</html>

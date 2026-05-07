@@ -26,7 +26,7 @@ Optional: use a local static server (e.g., VS Code Live Server) for easier devel
 - `LICENSE` — MIT license
 
 ## Disclaimer
-This project is for educational and demonstrational purposes only. Apple and iPhone are trademarks of Apple Inc., and this project is not affiliated with or endorsed by Apple.
+This project is for educational and demonstration purposes only. Apple and iPhone are trademarks of Apple Inc., and this project is not affiliated with or endorsed by Apple.
 
 ## License
 Distributed under the MIT License. See `LICENSE` for details.

@@ -32,7 +32,8 @@ jobs:
       - name: Prepare site files
         run: |
           mkdir -p public
-          rsync -av --exclude '.git' --exclude '.github' --exclude 'public' ./ public/
+          cp index.html index.htm LICENSE public/
+          find . -maxdepth 1 -type f \( -iname '*.png' -o -iname '*.jpg' -o -iname '*.webp' \) -exec cp {} public/ \;
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

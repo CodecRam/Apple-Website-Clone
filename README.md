@@ -11,17 +11,20 @@ A static HTML/CSS clone of Apple’s iPhone landing page, built for layout pract
 
 ## Tech Stack
 - HTML5
-- CSS3 (inline styles inside `index.htm`)
+- CSS3 (inline styles inside `index.html`)
 - Font Awesome (CDN)
 
 ## Getting Started
 1. Clone the repository.
-2. Open `index.htm` in your browser (no build step required).
+2. Open `index.html` in your browser (no build step required).
 
 Optional: use a local static server (e.g., VS Code Live Server) for easier development.
 
+## Deployment
+GitHub Pages deployment is configured via GitHub Actions. Ensure the repository Pages source is set to **GitHub Actions** in the repository settings.
+
 ## Project Structure
-- `index.htm` — main page with markup and styles
+- `index.html` — main page with markup and styles
 - `*.png`, `*.jpg`, `*.webp` — image assets used by the page
 - `LICENSE` — MIT license
 

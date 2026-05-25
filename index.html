@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            line-height: 44px;
+            width: 100%;
+            background-color: #F2F2F2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navcontainer {
+            height: 44px;
+            width: 996px;
+            max-width: 1024px;
+            letter-spacing: -0.12px;
+        }
+
+        .navcontainer ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            list-style: none;
+            padding: 0 8px 0 8px;
+        }
+
+        .fa-brands {
+            font-size: 17px;
+        }
+
+        .navcontainer li a {
+            color: #303030;
+            text-decoration: none;
+        }
+
+        .navbar2 {
+            height: 100px;
+            width: 100%;
+            padding: 8px 0 8px 0;
+            position: relative;
+            background-color: #FFFFFF;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navcontainer2 {
+            height: 92px;
+            margin: 0 34px 0 34px;
+            padding: 0 0 49px 0;
+        }
+
+        .navcontainer2 ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            vertical-align: top;
+            font-size: 12px;
+            line-height: 25px;
+            letter-spacing: -0.12;
+        }
+
+        .navcontainer2 li {
+            margin: 0 -2px 0 0;
+            padding: 0 20px 0 4px;
+            display: inline-block;
+            list-style: none;
+        }
+
+        .navcontainer2 figure {
+            background-position: 50% 100%;
+            background-repeat: no-repeat;
+            height: 54px;
+            width: 38px;
+            margin: 0 19px 7px 19px;
+        }
+
+        .navcontainer2 ul li a {
+            letter-spacing: -0.12px;
+            text-align: center;
+            margin: 3px 0 0 0;
+            text-decoration: none;
+            color: #1D1D1F;
+        }
+
+        .navcontainer2 img {
+            height: 54px;
+            width: 75.8875px;
+        }
+
+        .navcontainer2 ul li a p {
+            line-height: 16.005px;
+            width: 75.8875px;
+        }
+
+        .navbar3 {
+            line-height: 16.6667px;
+            width: 100%;
+            padding: 14px 0 14px 0;
+            background-color: #F5F5F7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar3 p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: lighter;
+            width: 980px;
+            text-align: center;
+            letter-spacing: 0.154px;
+        }
+
+        .adscontainer1 {
+            background-color: black;
+            height: 100vh;
+            width: 100%;
+            padding: 140px 0 95px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cont1box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cont1textbox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 582px 69px 582px;
+            text-align: center;
+        }
+
+        #p1 {
+            line-height: 16.0005px;
+            height: 22px;
+            width: 144.7px;
+            padding: 3px 11px 3px 11px;
+            border-radius: 12px;
+            font-size: 12px;
+            text-align: center;
+            letter-spacing: -0.12px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #F56300;
+        }
+
+        .fig1 {
+            height: 20px;
+            width: 140px;
+            margin: 8px 0 0 0;
+        }
+
+        .fig2 {
+            height: 53px;
+            margin: 25px;
+        }
+
+        #p2 {
+            display: inline;
+            color: white;
+            text-align: center;
+            font-size: 21px;
+            letter-spacing: 0.231px;
+            line-height: 29.001px;
+            margin: -3px 0 0 0;
+        }
+
+        .btn1 {
+            padding: 7px 15px 7px 15px;
+            min-width: 30px;
+            background-color: #0077ED;
+            border-radius: 980px;
+            font-size: 17px;
+            display: inline-block;
+            margin-top: 16px;
+            color: white;
+        }
+
+        .cont1textbox a {
+            font-size: 21px;
+            margin: 16px 14px 0 14px;
+            color: #2997FF;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .cont1iphone {
+            width: 100%;
+        }
+
+        .fig3 {
+            margin: 0 0 0 -350px;
+            position: relative;
+            left: 759px;
+            display: inline;
+        }
+
+        .adscontainer2 {
+            height: 100%;
+            width: 100%;
+            padding: 77px 0 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cont2box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cont2textbox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 588px 34px 588px;
+            text-align: center;
+        }
+
+        #cont2_title {
+            color: #1D1D1F;
+            margin-top: 16px;
+            font-size: 48px;
+            font-weight: 600;
+            letter-spacing: -0.144px;
+            text-align: center;
+            line-height: 52.0077px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #cont2_p2 {
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline;
+            color: black;
+            text-align: center;
+            font-size: 21px;
+            letter-spacing: 0.231px;
+            line-height: 29.001px;
+            margin-top: 18px;
+            width: 360px;
+        }
+
+        .cont2textbox a {
+            font-size: 21px;
+            margin: 16px 14px 0 14px;
+            color: #2997FF;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .cont2iphone {
+            width: 100%;
+        }
+
+        .fig6 {
+            margin: 0 0 0 -937px;
+            position: relative;
+            left: 759px;
+            display: inline;
+        }
+
+        .container4 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container4 .title {
+            font-size: 48px;
+            color: black;
+            font-weight: 600;
+            height: auto;
+            padding-top: 30px;
+        }
+
+        .title p {
+            text-align: center;
+        }
+
+        .container4 .mob_list {
+            display: flex;
+            width: 70%;
+            margin-top: 6%;
+            height: auto;
+        }
+
+        .mob1 {
+            width: 24%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .mob1 .mob_up {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.514);
+            height: 555px;
+            margin-bottom: 20%;
+        }
+
+        .mob1 .mob_up img {
+            width: 200px;
+            height: 300px;
+            padding: 10% 0%;
+        }
+
+        .mob1 .mob_up .colors1,
+        .mob1 .mob_up .colors2,
+        .mob1 .mob_up .colors3,
+        .mob1 .mob_up .colors4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .mob1 .mob_up .colors1 .clr,
+        .mob1 .mob_up .colors2 .clr,
+        .mob1 .mob_up .colors3 .clr,
+        .mob1 .mob_up .colors4 .clr {
+            border-radius: 50%;
+            width: 12px;
+            height: 12px;
+            box-shadow: 1px 1px 1px black;
+        }
+
+        .mob1 .mob_up h6 {
+            color: rgb(224, 95, 2);
+            font-size: 12px;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+
+        .mob1 .mob_up h4 {
+            font-size: 23px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .mob1 .mob_up .se_adjust {
+            margin-top: 32px;
+        }
+
+        .mob1 .mob_up .adjust_margin {
+            margin-top: 28px;
+        }
+
+        .mob1 .mob_up p {
+            font-size: 17px;
+            font-weight: 400;
+        }
+
+        .mob1 .mob_up h5 {
+            margin-top: 50px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        .mob1 .mob_up .se_adjust_h5 {
+            margin-top: 20px;
+        }
+
+        .mob1 .mob_up button {
+            border-radius: 20px;
+            padding: 5px 16px;
+            background: rgb(1, 108, 207);
+            color: white;
+            font-size: 12px;
+            margin-top: 15px;
+            border: transparent;
+            cursor: pointer;
+        }
+
+        .mob1 .mob_up h3 {
+            font-size: 14px;
+            color: rgb(1, 108, 207);
+            font-weight: 300;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+            margin-bottom: 35px;
+        }
+
+        .mob1 .mob_up h3:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            color: rgb(1, 108, 207);
+        }
+
+        .mob_down {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.514);
+            height: 49%;
+            margin: 20px 20px;
+        }
+
+        .mob_down h3 {
+            text-align: center;
+            font-weight: 600;
+            padding-bottom: 6%;
+        }
+
+        .mob_down h5 {
+            text-align: center;
+            font-weight: 100;
+            font-size: 14px;
+        }
+
+        .mob_down .div2 {
+            margin: 15px 0px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .div2 img {
+            width: 50px;
+            height: 40px;
+        }
+
+        .mob_down .div2 h5 {
+            font-size: 14px;
+            font-weight: 100;
+        }
+
+        .mob_down .div2 h6 {
+            font-weight: 100;
+            font-size: 14px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .mob_down .div2 h6 sup {
+            font-size: 9px;
+        }
+
+        .mainfooter {
+            background-color: #F5F5F7;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footernav {
+            padding: 17px 22px 17px 0px;
+            display: flex;
+            align-items: center;
+            color: #444445;
+        }
+
+        .p1 {
+            color: #828283;
+            margin: 0 7px 0 7px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .p2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
+
+        .footerlist {
+            color: #444445;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footerlist ul {
+            width: 196px;
+        }
+
+        .footerlist li {
+            list-style: none;
+            color: #444445;
+            margin-bottom: 10px;
+        }
+
+        .footerlist a {
+            text-decoration: none solid rgba(0, 0, 0, 0.56);
+            color: black;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: -0.12px;
+        }
+
+        .footerlist h3 {
+            font-size: 12px;
+            letter-spacing: -0.12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar1 starts -->
+    <nav class="navbar">
+        <div class="navcontainer">
+            <ul>
+                <li><a href=""><i class="fa-brands fa-apple"></i></a></li>
+                <li><a href="">Store</a></li>
+                <li><a href="">Mac</a></li>
+                <li><a href="">iPad</a></li>
+                <li><a href="">iPhone</a></li>
+                <li><a href="">Watch</a></li>
+                <li><a href="">AirPods</a></li>
+                <li><a href="">TV & Home</a></li>
+                <li><a href="">Entertainment</a></li>
+                <li><a href="">Accessories</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- navbar2 starts -->
+    <nav class="navbar2">
+        <div class="navcontainer2">
+            <ul>
+                <li>
+                    <a href="">
+                        <figure><img
+                                src="https://www.apple.com/v/iphone/home/br/images/chapternav/iphone_15_pro_light__diyvo6c7yu82_large.svg"
+                                alt="iPhone 15 Pro">
+                            <p>iPhone 15 Pro</p>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img
+                                src="https://www.apple.com/v/iphone/home/br/images/chapternav/iphone_15_light__euftnkhrzdea_large.svg"
+                                alt="iPhone 15">
+                            <p>iPhone 15</p>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img
+                                src="https://www.apple.com/v/iphone/home/br/images/chapternav/iphone_14_light__fwknsxkf80uq_large.svg"
+                                alt="iPhone 14">
+                            <p>iPhone 14</p>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img
+                                src="https://www.apple.com/v/iphone/home/br/images/chapternav/iphone_13_light__ewo3e0sf67o2_large.svg"
+                                alt="iPhone 13">
+                            <p>iPhone 13</p>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img
+                                src="https://www.apple.com/v/iphone/home/br/images/chapternav/iphone_se_light__fhg8duy6ffau_large.svg"
+                                alt="iPhone SE">
+                            <p>iPhone SE</p>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img
+                                src="https://www.apple.com/v/iphone/home/br/images/chapternav/iphone_compare_light__f4jj7brpbvm2_large.svg"
+                                alt="Compare">
+                            <p>Compare</p>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img
+                                src="https://www.apple.com/v/iphone/home/br/images/chapternav/airpods_light__8oj157p2476a_large.svg"
+                                alt="AirPods">
+                            <p>Airpods</p>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img
+                                src="https://www.apple.com/v/iphone/home/br/images/chapternav/airtag_light__cb2bmnv6aoeu_large.svg"
+                                alt="AirTag">
+                            <p>AirTag</p>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img
+                                src="https://www.apple.com/v/iphone/home/br/images/chapternav/accessories_light__ed5l6ipsevqu_large.svg"
+                                alt="Accessories">
+                            <p>Accessories</p>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img
+                                src="https://www.apple.com/v/iphone/home/br/images/chapternav/iphone_ios_light__b8s4ws8o77iq_large.svg"
+                                alt="iOS 17">
+                            <p>iOS 17</p>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img
+                                src="https://www.apple.com/v/iphone/home/br/images/chapternav/shop_iphone_light__b2toggskllle_large.svg"
+                                alt="Shop iPhone">
+                            <p>Shop iPhone</p>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- navbar 3 starts -->
+    <nav class="navbar3">
+        <p>Save up to ₹6000.00 instantly on selected iPhone models with HDFC Bank Credit Cards.+ Plus No Cost EMI from
+            most leading banks.</p>
+    </nav>
+
+    <!-- Advertise container1 starts -->
+    <div class="adscontainer1">
+        <div class="cont1box">
+            <div class="cont1textbox">
+                <p id="p1">New</p>
+                <img class="fig1"
+                    src="https://www.apple.com/v/iphone/home/br/images/overview/hero/iphone_15_pro_logo__xsnr3zpj28yu_large.jpg"
+                    alt="iPhone 15 Pro Logo">
+                <img class="fig2"
+                    src="https://www.apple.com/v/iphone/home/br/images/overview/hero/headline_titanium__cj5ay941qj6u_large.jpg"
+                    alt="Titanium">
+
+                <p id="p2">From ₹21483.00/mo.‡ or ₹134900.00*</p>
+
+                <button class="btn1">Buy</button>
+
+                <a href="https://www.apple.com/in/iphone-15-pro/">Learn more ></a>
+
+            </div>
+
+            <div class="cont1iphone">
+                <img class="fig3"
+                    src="https://www.apple.com/v/iphone/home/br/images/overview/hero/hero_iphone_15_pro__eqwrvy72748y_large.jpg"
+                    alt="iPhone 15 Pro">
+            </div>
+        </div>
+    </div>
+
+    <!-- Advertise container2 starts -->
+    <div class="adscontainer2">
+        <div class="cont2box">
+            <div class="cont2textbox">
+                <p id="p1">New</p>
+                <img class="fig4"
+                    src="https://www.apple.com/v/iphone/home/br/images/overview/hero/iphone_15_logo__bva4cdj5koty_large.jpg"
+                    alt="iPhone 15 Logo">
+
+                <p id="cont2_title">Newphoria</p>
+
+                <p id="cont2_p2">From ₹12483.00/mo.‡ or ₹79900.00*</p>
+
+                <button class="btn1">Buy</button>
+
+                <a href="">Learn more ></a>
+
+            </div>
+
+            <div class="cont2iphone">
+                <img class="fig6"
+                    src="https://www.apple.com/v/iphone/home/br/images/overview/hero/hero_iphone_15__ax3qw7xg9z8u_large.jpg"
+                    alt="iPhone 15">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
